@@ -1,0 +1,277 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{relsize}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Riddhi}{Khatsuria, \smaller{PMP\textregistered}}{
+    \small
+    +91 9773114014 | 
+    \urlstyle{same}\href{https://riddhikhatsuria.wixsite.com/riddhi}{\bf \small riddhikhatsuria.wixsite.com/riddhi} | 
+    \href{mailto:riddhikhatsuria@gmail.com}{\bf \small riddhikhatsuria@gmail.com} | 
+    LinkedIn://\href{https://www.linkedin.com/in/riddhikhatsuria}{\bf \small riddhikhatsuria} | 
+    Github://\href{https://github.com/riddhikhatsuria}{\bf \small riddhikhatsuria}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.35\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{GTU \footnotesize \textit{(GEC Bhavnagar)}}
+\descript{BEng in Information Technology}
+\location{Aug 2020 | Gujarat, India}
+\location{ CGPA: 9.22 / 10.0 {\footnotesize \textit{(Institute Rank: 1)}}}
+
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     LINKS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% LinkedIn://  \href{https://www.linkedin.com/in/parthsompura}{\bf parthsompura} \\
+% Github:// \href{https://github.com/parthsompura}{\bf parthsompura} \\
+% YouTube://  \href{https://www.youtube.com/@parth.pathak}{\bf @parth.pathak} \\
+% Instagram://  \href{https://www.instagram.com/parth.2704/}{\bf @parth.2704} \\
+% Facebook:// \href{https://www.facebook.com/parth2704}{\bf parth2704} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Data Structures \& Algorithms \\
+Design and Analysis of Algorithms \\
+Object Oriented Programming \\
+Operating System \\
+Database Management System \\
+Computer Networks \\
+Web Technologies \\
+Machine Learning \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Programming Languages:}
+Python \textbullet{} Java \textbullet{} JavaScript \textbullet{} SQL \\
+\location{Frameworks \& Libraries:}
+Django \textbullet{} FastAPI \textbullet{} TensorFlow \textbullet{} OpenCV \textbullet{} PyTest \textbullet{} scikit-learn \\
+\location{Databases \& Cloud:}
+MongoDB \textbullet{} PostgreSQL \textbullet{} MySQL \textbullet{} Docker \textbullet{} Kubernetes \textbullet{} GCP \textbullet{} AWS \\
+\location{Specializations:}
+AI/ML \textbullet{} Agentic Frameworks \textbullet{} LLMs \textbullet{} Microservices \textbullet{} REST APIs \textbullet{} CI/CD
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+Project Management Professional (PMP)\textregistered, {\footnotesize \textit{\textbf{Project Management Institute (PMI)\textregistered}}}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HONORS & AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Honors \& Awards}
+Employee of the Year Award, {\footnotesize \textit{\textbf{TTL, 2023}}}\\
+Best Intern Award, {\footnotesize \textit{\textbf{eInfochips, 2021}}}\\
+Distinguished Alumni Award, {\footnotesize \textit{\textbf{GECB, 2020}}}\\
+AAshlesha Techfest Winner, {\footnotesize \textit{\textbf{GECB, 2017}}}\\
+Academic Excellence Award, {\footnotesize \textit{\textbf{2\% of GSEB, 2014}}}\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     POSITIONS OF RESPONSIBILITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Positions}
+\location{Project Manager | 2023-24}
+\footnotesize \textit{PLM Group, Tata Technologies}\\
+
+\location{Team Lead | 2022}
+\footnotesize \textit{Python, Pysquad}\\
+
+\location{Core Member | 2020}
+\footnotesize \textit{Google Developer Group (GDG), Ahmedabad}\\
+
+\location{Project Team Lead | 2019}
+\footnotesize \textit{Gujarat Industrial Hackathon (GIH)}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.61\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience (5+ Yrs)}
+
+\runsubsection{Tata Technologies}
+\descript{| Software Engineer \footnotesize \textit{(Solution Developer)}}
+\location{Oct 2022 - Present | Pune, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Engineered \textbf{Python-based microservice} for \textbf{Tata Motors} vehicle service management platform, implementing \textbf{AI/ML-powered cost estimation} engine using \textbf{regression models} and historical service data; integrated \textbf{automated SMS notifications} via \textbf{REST APIs} for real-time service status updates, reducing customer wait time by \textbf{35\%} and serving \textbf{15K+ service requests/month}.
+\item Architected \textbf{Agentic AI framework} with \textbf{Django} and \textbf{FastAPI}, integrating \textbf{REST APIs}, \textbf{webhooks}, and \textbf{OAuth 2.0} authentication protocols to orchestrate \textbf{15+ AI agents}, processing \textbf{10K+ requests/day} with \textbf{99.7\%} uptime across production environments.
+\item Deployed containerized \textbf{Python microservices} on \textbf{Kubernetes (GCP)}, leveraging \textbf{Docker}, \textbf{MongoDB}, and \textbf{PostgreSQL} with \textbf{ELK stack} for observability; optimized multi-threaded operations using \textbf{Kibana} debugging, reducing memory footprint by \textbf{40\%} and serving \textbf{50K+ products}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Animaker}
+\descript{| Software Engineer \footnotesize \textit{(Python Developer)}}
+\location{May 2022 – Sep 2022 | Chennai, IN}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Spearheaded Python development at leading \textbf{animation software} for \textbf{20M+} users with Python, Django, AWS, Celery, AWS Lambda, \& ffmpeg.
+\item Optimized background processing, boosting efficiency with \textbf{Celery} and \textbf{AWS Lambda}, while maintaining reliability through a robust \textbf{Python testing framework}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{PySquad Informatics}
+\descript{| Software Engineer \footnotesize \textit{(Python Developer)}}
+\location{Jan 2022 – Apr 2022 | Ahmedabad, IN}
+\begin{tightemize}
+\item Steered the development of \textbf{scalable} web services and APIs using \textbf{Django} \& \textbf{FastAPI}, boosting system efficiency by \textbf{30\%}.
+\item Implemented robust \textbf{Python Unit tests}, reducing post deployment issues by \textbf{20\%} and maintaining a \textbf{95\%} test coverage for critical codebases.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{eInfochips (An Arrow Company)}
+\descript{| Software Engineer }
+\location{Jan 2021 – Dec 2021 | Ahmedabad, IN}
+\begin{tightemize}
+\item Developed \textbf{AI-powered computer vision} modules using \textbf{Python}, \textbf{OpenCV}, and \textbf{TensorFlow} for real-time object detection and image processing, achieving \textbf{92\%} accuracy in production deployments for IoT devices.
+\item Built \textbf{REST API} automation framework with \textbf{Python} and \textbf{PyTest}, integrating with \textbf{CI/CD pipelines} to automate testing for \textbf{50+ API endpoints}, reducing regression testing time by \textbf{40\%} and improving code coverage to \textbf{95\%}.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH/PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Cervical Cancer Prediction}
+\descript{| AI/ML Project}
+\location{Jan 2020 – May 2020}
+Developed \textbf{multi-label classification} system using \textbf{Python}, \textbf{TensorFlow}, and \textbf{scikit-learn} with \textbf{artificial neural networks (ANN)} and ensemble methods. Performed feature engineering on \textbf{858 patient records} with \textbf{36 clinical features}, achieving \textbf{98.2\%} accuracy and \textbf{97.8\%} F1-score through hyperparameter optimization.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HONORS & AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Honors \& Awards} 
+% \begin{tabular}{rll}
+% 2022	     & 1\textsuperscript{st}/500  & Institute Silver Medal,  \footnotesize \textit{\textbf{IIT Jammu}}\\
+% 2021	     & Top 1\%  & Significant Contributor Award,  \footnotesize \textit{\textbf{Intel}}\\
+% 2021     & National & IBM CodeKnack Winner \\
+% 2021     & National & IEEE CS Contest Winner, \footnotesize \textit{\textbf{IIT Bombay}} \\
+% 2020	     & Top 3\%  & GATE (CSE), \footnotesize \textit{\textbf{IIT Delhi}}\\
+% 2020	     & 1\textsuperscript{st}/600  & Distinguished Alumni Award, \footnotesize \textit{\textbf{GEC Bhavnagar}}\\
+% 2020     & 2\textsuperscript{nd}/600 & Ninja Wave Coding Competition, \footnotesize \textit{\textbf{Coding Ninjas \& IEEE SB}} \\
+% 2018     & National & Competitive Coding Techfest Winner,  \footnotesize \textit{\textbf{GEC \& SSGEC \& SSCCM}}\\
+% 2015     & 1\textsuperscript{st}/500 & 
+% Academic Excellence Award, Class XII \footnotesize \textit{\textbf{(top 2\% of GSEB)}} \\
+% 2012     & National & The All India Essay Writing Event Winner, \footnotesize \textit{\textbf{SRCM \& UNIC}}
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

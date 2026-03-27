@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Jay}{Pathak}{ +91 96623 16265 | \href{mailto:sompurajay0@gmail.com}{\bf sompurajay0@gmail.com} | LinkedIn://\href{https://www.linkedin.com/in/jaysompura}{\bf jaysompura}} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.35\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{GTU \footnotesize \textit{(GEC Bhavnagar)}}
+\descript{BEng in Mechanical Engineering}
+\location{Aug 2023 | Gujarat, India}
+\location{ CGPA: 7.23 / 10.0 }
+\sectionsep
+
+\subsection{RCAD Solutions}
+\descript{Professional Certificate in AutoCAD \& Revit}
+\location{May 2024 - Aug 2024 | Gujarat, India}
+
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     LINKS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% LinkedIn://  \href{https://www.linkedin.com/in/parthsompura}{\bf parthsompura} \\
+% Github:// \href{https://github.com/parthsompura}{\bf parthsompura} \\
+% YouTube://  \href{https://www.youtube.com/@parth.pathak}{\bf @parth.pathak} \\
+% Instagram://  \href{https://www.instagram.com/parth.2704/}{\bf @parth.2704} \\
+% Facebook:// \href{https://www.facebook.com/parth2704}{\bf parth2704} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Computer Aided Design \\
+Computer Aided Manufacturing  \\
+Automation in Manufacturing  \\
+Power Plant Engineering \\
+Quality and Reliability  \\
+Rapid Prototyping \\
+Industrial 4.0 \\
+Manufacturing Processes \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Tools:}
+AutoCAD \textbullet{} REVIT/BIM/MEP \\ 
+\textbullet{} Revit Architecture \textbullet{} ERP \\
+\location{Miscellaneous:}
+Mechanical System Design \textbullet{} Negotiation \\
+\textbullet{} Materials Purchasing \textbullet{} Purchase Order \\
+\textbullet{} Quality Control \textbullet{} Quality System \\
+\textbullet{} Project Management \textbullet{} MS Office
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HONORS & AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Honors \& Awards}
+Star Employee Award, {\footnotesize \textit{\textbf{IPCL, 2024}}}\\
+Best Intern Award, {\footnotesize \textit{\textbf{Anupam Industries, 2023}}}\\
+Academic Excellence Award, {\footnotesize \textit{\textbf{GTU, 2023}}}\\
+Mountaineering Award, {\footnotesize \textit{\textbf{SVMI, 2020}}}\\
+AAshlesha Techfest Winner, {\footnotesize \textit{\textbf{GECB, 2021}}}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     POSITIONS OF RESPONSIBILITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Positions}
+\location{Team Captain | 2024}
+\footnotesize \textit{IPCL Cricket League}\\
+
+\location{Team Lead | 2023}
+\footnotesize \textit{Shell Baking Furnace Purchasing, IPCL}
+
+\location{Technical Coordinator | 2022}
+\footnotesize \textit{Led all 7 events in Tech fest of GECB}
+
+\location{Project Team Lead | 2021}
+\footnotesize \textit{Gujarat Industrial Hackathon (GIH)}
+
+\location{Team Leader | 2020}
+\footnotesize \textit{SVMI, MT ABU}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.61\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience (3+ Yrs)}
+\runsubsection{Transenergy MEP Consultants}
+\descript{| MEPF Design Engineer}
+\location{Jan 2026 – Present | Ahmedabad, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Produced detailed \textbf{MEPF coordination drawings} for commercial and residential projects using \textbf{Revit MEP} and \textbf{AutoCAD}, ensuring seamless integration of \textbf{HVAC}, \textbf{plumbing}, \textbf{electrical}, and \textbf{fire protection} systems.
+\item Performed \textbf{clash detection} and resolved \textbf{100+ interdisciplinary conflicts} across \textbf{BIM models}, reducing on-site rework by \textbf{20\%} and saving project costs.
+\item Prepared \textbf{Bill of Quantities (BOQ)}, \textbf{equipment schedules}, and \textbf{as-built drawings} in compliance with \textbf{NBC} and \textbf{IS codes}, supporting timely project handovers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Brilliant Approach Private Limited}
+\descript{| MEPF Design Engineer}
+\location{Sep 2024 – Dec 2025 | Ahmedabad, IN}
+\begin{tightemize}
+\item Designed precise \textbf{2D MEPF layouts} and assisted in \textbf{3D modeling} using \textbf{AutoCAD} and \textbf{Revit}, integrating \textbf{fire safety}, \textbf{plumbing}, \textbf{tank sleeve layouts}, and \textbf{pump room piping} for smooth coordination.
+\item Coordinated multidisciplinary teams for effective \textbf{clash detection}, reducing conflicts by \textbf{25\%} and accelerating project delivery; developed \textbf{schematics} to support system clarity.
+\item Assisted in technical documentation and \textbf{shop drawings} development for \textbf{HVAC}, \textbf{plumbing}, \textbf{electrical}, and \textbf{fire safety systems}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Investment \& Precision Castings Ltd}
+\descript{| Materials Engineer}
+\location{Jul 2023 – Apr 2024 | Bhavnagar, IN}
+\begin{tightemize}
+\item Negotiated supplier contracts, securing \textbf{10\% cost savings} while maintaining quality and delivery.
+\item Managed budgets and costs, reducing procurement spend by \textbf{15\%} and enhancing financial efficiency.
+\item Automated procurement processes, cutting cycle time by \textbf{30\%} and reducing errors.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Anupam Industries Ltd}
+\descript{| Mechanical Engineer Intern}
+\location{Feb 2023 – May 2023 | Anand, IN}
+\begin{tightemize}
+\item Assisted in mechanical design and prototype testing for \textbf{cranes}, \textbf{enhancing performance by 15\%} and \textbf{reducing defects by 10\%}.
+\item Improved manufacturing processes, increasing production efficiency by \textbf{20\%} through hands-on involvement.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH/PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Residential Building Analysis \& Planning}
+\descript{}
+\location{May 2024 – June 2024}
+Led analysis and planning for a \textbf{50-unit residential building} using \textbf{AutoCAD} (2D layouts) and \textbf{Revit} (3D modeling \& MEP), achieving \textbf{20\% higher design efficiency} and \textbf{15\% faster project completion}.
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HONORS & AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Honors \& Awards} 
+% \begin{tabular}{rll}
+% 2022	     & 1\textsuperscript{st}/500  & Institute Silver Medal,  \footnotesize \textit{\textbf{IIT Jammu}}\\
+% 2021	     & Top 1\%  & Significant Contributor Award,  \footnotesize \textit{\textbf{Intel}}\\
+% 2021     & National & IBM CodeKnack Winner \\
+% 2021     & National & IEEE CS Contest Winner, \footnotesize \textit{\textbf{IIT Bombay}} \\
+% 2020	     & Top 3\%  & GATE (CSE), \footnotesize \textit{\textbf{IIT Delhi}}\\
+% 2020	     & 1\textsuperscript{st}/600  & Distinguished Alumni Award, \footnotesize \textit{\textbf{GEC Bhavnagar}}\\
+% 2020     & 2\textsuperscript{nd}/600 & Ninja Wave Coding Competition, \footnotesize \textit{\textbf{Coding Ninjas \& IEEE SB}} \\
+% 2018     & National & Competitive Coding Techfest Winner,  \footnotesize \textit{\textbf{GEC \& SSGEC \& SSCCM}}\\
+% 2015     & 1\textsuperscript{st}/500 & 
+% Academic Excellence Award, Class XII \footnotesize \textit{\textbf{(top 2\% of GSEB)}} \\
+% 2012     & National & The All India Essay Writing Event Winner, \footnotesize \textit{\textbf{SRCM \& UNIC}}
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

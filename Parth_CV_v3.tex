@@ -1,0 +1,177 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in,right=0.5in,top=0.4in,bottom=0.3in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet}  % Use Helvetica (closest to Arial)
+\renewcommand{\familydefault}{\sfdefault}  % Set sans-serif as default
+
+% Define colors
+\definecolor{linkcolor}{RGB}{0,0,255}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting - minimal spacing
+\titleformat{\section}
+  {\normalfont\small\bfseries\centering}
+  {}{0em}{}
+\titlespacing*{\section}{0pt}{2pt}{0pt}
+
+% Minimal spacing everywhere
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{0pt}
+\setlength{\topsep}{0pt}
+
+\begin{document}
+
+% Header
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{Parth Pathak}\\[0.5pt]
+    {\small\href{https://linkedin.com/in/parthsompura}{\color{linkcolor}LinkedIn} \textbf{\textbar{}} \href{https://github.com/parthsompura}{\color{linkcolor}GitHub} \textbf{\textbar{}} \href{https://parthcseiitian.wixsite.com/parth}{\color{linkcolor}Portfolio}}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\raggedleft
+    {\small Email: \href{mailto:2020pcs1013@iitjammu.ac.in}{2020pcs1013@iitjammu.ac.in}}\\[4pt]
+    {\small Mobile: +91 97245 61020}
+\end{minipage}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Education Section
+\section*{EDUCATION}
+
+\noindent
+{\small\textbf{Indian Institute of Technology (IIT) Jammu \textbf{\textbar{}} Silver Medalist}}\hfill{\small\textbf{Aug 2020 - Aug 2022}}\\[-2pt]
+{\small Master of Technology in Computer Science (Data Science) -- CGPA: 9.5/10.0 -- Rank: 1/500}
+
+\vspace{3pt}
+\noindent
+{\small\textbf{Gujarat Technological University (GEC Bhavnagar)}}\hfill{\small\textbf{Aug 2016 - Aug 2020}}\\[-2pt]
+{\small Bachelor of Engineering in Information Technology -- CGPA: 9.5/10.0 -- Rank: 1/600}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Skills Summary Section
+\section*{TECHNICAL SKILLS}
+
+{\small
+\begin{itemize}[leftmargin=0.15in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\bullet$]
+    \item \textbf{Languages:} Python, Java, C/C++, SQL (MySQL, PostgreSQL), JavaScript, TypeScript, R, HTML5/CSS3, Golang
+    \item \textbf{Frameworks \& Libraries:} Django, FastAPI, Flask, TensorFlow, PyTorch, Keras, Scikit-learn, LangChain, Hugging Face, React, Node.js, OpenCV, NumPy, Pandas
+    \item \textbf{Tools \& Technologies:} Git, Docker, Kubernetes, Jenkins, AWS (EC2, S3, SageMaker), REST APIs, Redis, MLflow, MongoDB, Linux/Unix, CI/CD
+    \item \textbf{Core Competencies:} Machine Learning, Deep Learning, NLP, Computer Vision, LLMs, RAG, Agentic AI, Prompt Engineering, MLOps, System Design, Agile/Scrum
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Work Experience Section
+\section*{EXPERIENCE (5+ YEARS)}
+
+{\small
+\noindent
+\textbf{Senior Software Engineer \textbf{\textbar{}} Egnyte}\hfill\textbf{Jan 2026 -- Present}\\[-2pt]
+{\small Mumbai, IN}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Spearheaded design of \textbf{multi-agent LLM orchestration framework} powering \textbf{Egnyte Copilot} (\textbf{RAG + Agentic AI}), serving \textbf{10,000+ DAUs} across \textbf{25,000+ enterprises} and reducing manual workflows by \textbf{60\%}
+    \item Engineered \textbf{transformer-based} file recommendation engine with \textbf{retrieval-augmented generation (RAG)} achieving \textbf{98.56\% precision@10}, improving user productivity by \textbf{45\%} through \textbf{semantic search} and \textbf{embedding similarity}
+    \item Architected \textbf{low-latency Python microservice} (FastAPI) with \textbf{async I/O} and \textbf{Redis caching} for \textbf{5PB+ on-prem} file system, achieving \textbf{<100ms P99 latency}, \textbf{99.9\% uptime}, and \textbf{50\%+ throughput improvement}
+    \item Open-source contributor: \href{https://pypi.org/project/langchain-community/}{\textbf{@langchain-ai}}:\href{https://github.com/langchain-ai/langchain-community/pull/104}{\textbf{\#104}} (LLM chain bug fix), \href{https://pypi.org/project/pysmbc/}{\textbf{@pysmbc}}:\href{https://github.com/hamano/pysmbc/pull/62}{\textbf{\#62}} (SMB protocol optimization)
+\end{itemize}
+
+\vspace{2pt}
+\noindent
+\textbf{Software Engineer \textbf{\textbar{}} Egnyte}\hfill\textbf{Apr 2022 -- Dec 2025}\\[-2pt]
+{\small Mumbai, IN}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Designed and scaled \textbf{15+ production microservices} (\textbf{Python, Java}) handling \textbf{500K+ daily transactions} on \textbf{AWS (EC2, S3, Lambda)} with \textbf{Kubernetes} orchestration, maintaining \textbf{99.95\% SLA}
+    \item Optimized \textbf{PostgreSQL} query execution and \textbf{connection pooling} strategies, reducing \textbf{P95 latency by 70\%} and cutting cloud infrastructure costs by \textbf{\$50K/year} through \textbf{data pipeline} and caching improvements
+    \item Built \textbf{end-to-end MLOps CI/CD pipelines} (Jenkins, Docker, \textbf{Kubernetes}) with automated testing and \textbf{model deployment} workflows, reducing release cycle from \textbf{2 hours $\rightarrow$ 20 minutes (80\% faster)}
+\end{itemize}
+
+\vspace{2pt}
+\noindent
+\textbf{Software Engineering Intern \textbf{\textbar{}} Intel Corporation}\hfill\textbf{Jul 2021 -- Apr 2022}\\[-2pt]
+{\small Bengaluru, IN}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Developed \textbf{IFTAT} --- an \textbf{NLP/ML-powered} log analysis tool using \textbf{transformer-based text classification} and \textbf{named entity recognition (NER)}, reducing firmware debugging time by \textbf{85\%} and saving \textbf{\$200K+/year}
+    \item First-authored research paper on \textbf{ML-driven firmware analysis} at \textbf{SHS'22 Conference}, demonstrating novel \textbf{NLP pipeline} for automated trace interpretation
+    \item Built \textbf{ML-powered test analytics platform} using \textbf{gradient-boosted models} and \textbf{feature engineering}, achieving \textbf{98.47\% accuracy} in regression detection, enabling \textbf{10x faster} root-cause analysis and saving \textbf{40 hours/week}
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Projects Section
+\section*{TECHNICAL PROJECTS}
+
+{\small
+\noindent
+\textbf{Cervical Cancer Prediction \textbf{\textbar{}} Python, TensorFlow, Scikit-learn, Keras}\hfill\textbf{Jan 2020 -- May 2020}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Developed ML pipeline for early cervical cancer detection using \textbf{multi-label classification} and \textbf{ANNs}, processing \textbf{858 patient records} with \textbf{35+ features}
+    \item Compared \textbf{7 ML algorithms} across \textbf{5 performance metrics}, achieving \textbf{98.2\% accuracy} with ensemble methods and SMOTE for class imbalance
+\end{itemize}
+
+\vspace{2pt}
+\noindent
+\textbf{Autograder Online Judge Platform \textbf{\textbar{}} FastAPI, React, Redux, Firebase, Docker}\hfill\textbf{2020}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Built automated code evaluation platform handling \textbf{50,000+ submissions} across \textbf{5 languages}, supporting \textbf{100+ concurrent submissions} with \textbf{<3s} evaluation time
+    \item Deployed with Redux state management and Firebase backend, serving \textbf{1,000+ students} and \textbf{50+ professors} with \textbf{99.5\% uptime}
+\end{itemize}
+
+\vspace{2pt}
+\noindent
+\textbf{Thesis: Robust Detection \& Segmentation of Lungs \& Lesion Areas}\hfill\textbf{IIT Jammu}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Robust Detection \& Segmentation of Lungs \& Lesion Areas in Chest CT Scans using Deep Learning, achieving \textbf{96.8\% mIoU}
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Honors & Awards Section
+\section*{HONORS \& AWARDS}
+
+{\small
+\begin{itemize}[leftmargin=0.15in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\bullet$]
+    \item \textbf{2022:} \textbf{Institute Silver Medal} - Ranked \textbf{1st/500}, IIT Jammu MTech
+    \item \textbf{2021:} \textbf{Top 1\% Contributor} - Intel -- \textbf{National Winner} - IBM CodeKnack \& IEEE CS Contest (IIT Bombay)
+    \item \textbf{2020:} \textbf{Top 3\% (AIR 897)} - GATE CSE -- \textbf{Distinguished Alumni (1st/600)} - GEC Bhavnagar -- \textbf{2nd/600} - Ninja Wave Coding
+    \item \textbf{2018:} \textbf{National Winner} - Competitive Coding Techfest
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Publications Section
+\section*{PUBLICATIONS}
+
+{\small
+\begin{itemize}[leftmargin=0.15in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\bullet$]
+    \item P. Pathak and S. Ranjan. IFTAT: Intelligent Firmware Trace Analysis Tool To Expedite Debugging. SHS, Intel, 2022.
+\end{itemize}
+}
+
+\end{document}

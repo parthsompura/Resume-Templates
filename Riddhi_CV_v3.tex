@@ -1,0 +1,167 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in,right=0.5in,top=0.4in,bottom=0.3in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[scaled]{helvet}  % Use Helvetica (closest to Arial)
+\renewcommand{\familydefault}{\sfdefault}  % Set sans-serif as default
+
+% Define colors
+\definecolor{linkcolor}{RGB}{0,0,255}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting - minimal spacing
+\titleformat{\section}
+  {\normalfont\small\bfseries\centering}
+  {}{0em}{}
+\titlespacing*{\section}{0pt}{2pt}{0pt}
+
+% Minimal spacing everywhere
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{0pt}
+\setlength{\topsep}{0pt}
+
+\begin{document}
+
+% Header
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{Riddhi Khatsuria, PMP\textregistered}\\[0.5pt]
+    {\small\href{https://linkedin.com/in/riddhikhatsuria}{\color{linkcolor}LinkedIn} \textbf{\textbar{}} \href{https://github.com/riddhikhatsuria}{\color{linkcolor}GitHub} \textbf{\textbar{}} \href{https://riddhikhatsuria.wixsite.com/riddhi}{\color{linkcolor}Portfolio}}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\raggedleft
+    {\small Email: \href{mailto:riddhikhatsuria@gmail.com}{riddhikhatsuria@gmail.com}}\\[4pt]
+    {\small Mobile: +91 9773114014}
+\end{minipage}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Education Section
+\section*{EDUCATION}
+
+\noindent
+{\small\textbf{Gujarat Technological University (GEC Bhavnagar) \textbf{\textbar{}} Institute Rank 1}}\hfill{\small\textbf{Aug 2016 - Aug 2020}}\\[-2pt]
+{\small Bachelor of Engineering in Information Technology -- CGPA: 9.22/10.0}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Skills Summary Section
+\section*{TECHNICAL SKILLS}
+
+{\small
+\begin{itemize}[leftmargin=0.15in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\bullet$]
+    \item \textbf{Languages:} Python, Java, JavaScript, SQL (MySQL, PostgreSQL, MongoDB)
+    \item \textbf{Frameworks \& Libraries:} Django, FastAPI, TensorFlow, OpenCV, PyTest, scikit-learn, Celery, AWS Lambda
+    \item \textbf{Tools \& Technologies:} Docker, Kubernetes, GCP, AWS, Git, REST APIs, CI/CD, ELK Stack, Kibana, Redis, Linux/Unix
+    \item \textbf{Core Competencies:} AI/ML, Agentic Frameworks, LLMs, Microservices Architecture, Computer Vision, System Design, Agile/Scrum
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Work Experience Section
+\section*{EXPERIENCE (5+ YEARS)}
+
+{\small
+\noindent
+\textbf{Software Engineer (Solution Developer) \textbf{\textbar{}} Tata Technologies}\hfill\textbf{Oct 2022 -- Present}\\[-2pt]
+{\small Pune, IN}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Engineered \textbf{Python-based microservice} for \textbf{Tata Motors} vehicle service management platform, implementing \textbf{AI/ML-powered cost estimation} engine using \textbf{regression models} and historical service data; integrated \textbf{automated SMS notifications} via \textbf{REST APIs} for real-time service status updates, reducing customer wait time by \textbf{35\%} and serving \textbf{15K+ service requests/month}
+    \item Architected \textbf{Agentic AI framework} with \textbf{Django} and \textbf{FastAPI}, integrating \textbf{REST APIs}, \textbf{webhooks}, and \textbf{OAuth 2.0} authentication protocols to orchestrate \textbf{15+ AI agents}, processing \textbf{10K+ requests/day} with \textbf{99.7\%} uptime across production environments
+    \item Deployed containerized \textbf{Python microservices} on \textbf{Kubernetes (GCP)}, leveraging \textbf{Docker}, \textbf{MongoDB}, and \textbf{PostgreSQL} with \textbf{ELK stack} for observability; optimized multi-threaded operations using \textbf{Kibana} debugging, reducing memory footprint by \textbf{40\%} and serving \textbf{50K+ products}
+    \item Led \textbf{Agile teams} as \textbf{Project Manager} for \textbf{PLM solutions}, managing \textbf{\$2M+ budget}, delivering \textbf{5+ projects} using \textbf{Scrum/Kanban}, achieving \textbf{98\% satisfaction} across \textbf{22K+ businesses}
+    \item Delivered \textbf{OptimizeIT} and \textbf{EDM2} projects utilizing \textbf{Python}, Java, and JavaScript, implementing \textbf{ML-driven optimization algorithms} that improved operational efficiency by \textbf{20\%} and reduced processing time by \textbf{30\%} for global manufacturing clients
+\end{itemize}
+
+\vspace{2pt}
+\noindent
+\textbf{Software Engineer (Python Developer) \textbf{\textbar{}} Animaker}\hfill\textbf{May 2022 -- Sep 2022}\\[-2pt]
+{\small Chennai, IN}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Spearheaded Python development at leading \textbf{animation software} for \textbf{20M+} users with Python, Django, AWS, Celery, AWS Lambda, \& ffmpeg
+    \item Optimized background processing, boosting efficiency with \textbf{Celery} and \textbf{AWS Lambda}, while maintaining reliability through a robust \textbf{Python testing framework}
+    \item Built \textbf{ML-powered video processing pipeline} using \textbf{Python} and \textbf{TensorFlow}, automating scene detection and content analysis for \textbf{100K+ videos/month}, reducing manual review time by \textbf{65\%} with \textbf{S3} and \textbf{SQS} integration
+\end{itemize}
+
+\vspace{2pt}
+\noindent
+\textbf{Software Engineer (Python Developer) \textbf{\textbar{}} PySquad Informatics}\hfill\textbf{Jan 2022 -- Apr 2022}\\[-2pt]
+{\small Ahmedabad, IN}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Steered the development of \textbf{scalable} web services and APIs using \textbf{Django} \& \textbf{FastAPI}, boosting system efficiency by \textbf{30\%}
+    \item Implemented robust \textbf{Python Unit tests}, reducing post deployment issues by \textbf{20\%} and maintaining a \textbf{95\%} test coverage for critical codebases
+    \item Designed and deployed \textbf{API Gateway} with \textbf{rate limiting} and \textbf{JWT authentication} using \textbf{Python/FastAPI}, handling \textbf{50K+ requests/day} with \textbf{<50ms} latency and \textbf{Redis} caching, improving API response time by \textbf{45\%}
+\end{itemize}
+
+\vspace{2pt}
+\noindent
+\textbf{Software Engineer \textbf{\textbar{}} eInfochips (An Arrow Company)}\hfill\textbf{Jan 2021 -- Dec 2021}\\[-2pt]
+{\small Ahmedabad, IN}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Developed \textbf{AI-powered computer vision} modules using \textbf{Python}, \textbf{OpenCV}, and \textbf{TensorFlow} for real-time object detection and image processing, achieving \textbf{92\%} accuracy in production deployments for IoT devices
+    \item Built \textbf{REST API} automation framework with \textbf{Python} and \textbf{PyTest}, integrating with \textbf{CI/CD pipelines} to automate testing for \textbf{50+ API endpoints}, reducing regression testing time by \textbf{40\%} and improving code coverage to \textbf{95\%}
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Projects Section
+\section*{TECHNICAL PROJECTS}
+
+{\small
+\noindent
+\textbf{Cervical Cancer Prediction \textbf{\textbar{}} Python, TensorFlow, scikit-learn, Keras}\hfill\textbf{Jan 2020 -- May 2020}
+\begin{itemize}[leftmargin=0.3in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\circ$]
+    \item Developed \textbf{multi-label classification} system using \textbf{ANNs} and ensemble methods on \textbf{858 patient records} with \textbf{36 features}, achieving \textbf{98.2\%} accuracy and \textbf{97.8\%} F1-score through hyperparameter optimization
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Honors & Awards Section
+\section*{HONORS \& AWARDS}
+
+{\small
+\begin{itemize}[leftmargin=0.15in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\bullet$]
+    \item \textbf{2023:} \textbf{Employee of the Year Award} - Tata Technologies
+    \item \textbf{2021:} \textbf{Best Intern Award} - eInfochips
+    \item \textbf{2020:} \textbf{Distinguished Alumni Award (1st/600)} - GEC Bhavnagar
+    \item \textbf{2017:} \textbf{AAshlesha Techfest Winner} - GEC Bhavnagar
+    \item \textbf{2014:} \textbf{Academic Excellence Award (Top 2\%)} - GSEB
+\end{itemize}
+}
+
+\vspace{2pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% Certifications Section
+\section*{CERTIFICATIONS}
+
+{\small
+\begin{itemize}[leftmargin=0.15in, itemsep=1.5pt, topsep=0pt, parsep=0pt, partopsep=0pt, label=$\bullet$]
+    \item \textbf{Project Management Professional (PMP)\textregistered} - Project Management Institute (PMI)\textregistered
+\end{itemize}
+}
+
+\end{document}

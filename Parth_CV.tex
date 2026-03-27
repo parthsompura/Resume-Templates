@@ -1,0 +1,281 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Parth}{Pathak}{
+    \small
+    +91 97245 61020 | 
+    \urlstyle{same}\href{https://parthcseiitian.wixsite.com/parth}{\bf \small parthcseiitian.wixsite.com/parth} | 
+    \href{mailto:2020pcs1013@iitjammu.ac.in}{\bf \small 2020pcs1013@iitjammu.ac.in} | 
+    LinkedIn://\href{https://www.linkedin.com/in/parthsompura}{\bf \small parthsompura} | 
+    Github://\href{https://github.com/parthsompura}{\bf \small parthsompura}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.35\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT Jammu \footnotesize \textit{\href{https://iitjammu.ac.in/convocation2022/medals.html}{(Silver Medalist)}}}
+\descript{MTech in Computer Science \\
+\footnotesize \textit{(Spec. Data Science)}}
+\location{Aug 2022 | J\&K, India}
+\location{ CGPA: 9.5 / 10.0 {\footnotesize \textit{(Institute Rank: 1)}}}
+\location{\footnotesize \textit{Thesis: Robust Detection and Segmentation of Lungs \& Lesion Areas in Diverse Chest CT Scans}}
+\sectionsep
+
+\subsection{GTU \footnotesize \textit{(GEC Bhavnagar)}}
+\descript{BEng in Information Technology}
+\location{Aug 2020 | Gujarat, India}
+\location{ CGPA: 9.5 / 10.0 {\footnotesize \textit{(Institute Rank: 1)}}}
+
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     LINKS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% LinkedIn://  \href{https://www.linkedin.com/in/parthsompura}{\bf parthsompura} \\
+% Github:// \href{https://github.com/parthsompura}{\bf parthsompura} \\
+% YouTube://  \href{https://www.youtube.com/@parth.pathak}{\bf @parth.pathak} \\
+% Instagram://  \href{https://www.instagram.com/parth.2704/}{\bf @parth.2704} \\
+% Facebook:// \href{https://www.facebook.com/parth2704}{\bf parth2704} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Data Organization \& Retrieval \\
+Optimization Techniques \\
+Big Data and Large Scale Computing \\
+Deep Learning \\
+XAI: Explainable AI {\footnotesize \textit{\textbf{(Thematic Seminar) }}}
+\sectionsep
+
+\subsection{Undergraduate}
+Data Structures \& Algorithms \\
+Design and Analysis of Algorithms \\
+Object Oriented Programming \\
+Operating System \\
+Database Management System \\
+Computer Networks \\
+Machine Learning \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Programming Languages:}
+Python \textbullet{} Java \textbullet{} C/C++ \textbullet{} MySQL \\
+R \textbullet{} JavaScript \textbullet{} HTML/CSS \textbullet{} Golang {\footnotesize \textit{(Basic)}}\\ 
+\location{Frameworks:}
+Django \textbullet{} FastAPI \textbullet{} Selenium \textbullet{} PyTest \\ OpenCV \textbullet{} TensorFlow \\
+\location{Miscellaneous:}
+AI/ML \textbullet{}  MATLAB \textbullet{} Beautiful Soup \\ 
+NumPy \textbullet{} PyTorch \textbullet{} Pandas \textbullet{} Keras \\
+SciPy \textbullet{} Scikit-learn \textbullet{} Matplotlib
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     POSITIONS OF RESPONSIBILITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Positions}
+\location{Teaching Assistant | 2020-21}
+\footnotesize \textit{Web Technologies, DAIICT Gandhinagar, 2021}\\
+\footnotesize \textit{DSA, IIT Jammu, 2020}\\
+
+\location{Core Member | 2020}
+\footnotesize \textit{Google Developer Group (GDG), Ahmedabad}\\
+
+\location{Project Team Lead | 2019}
+\footnotesize \textit{Gujarat Industrial Hackathon (GIH)}\\
+
+\location{Student Mentor | 2018}
+\footnotesize \textit{GATE (CSE), GEC Bhavnagar}\\
+
+\location{Technical Coordinator | 2017}
+\footnotesize \textit{Led all 7 events in Tech fest of GECB}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.61\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience (5+ Yrs)}
+\runsubsection{Egnyte}
+\descript{| Senior Software Engineer }
+\location{Jan 2026 - Present | Mumbai, IN}
+\descript{Software Engineer }
+\location{Apr 2022 - Dec 2025 | Mumbai, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Architected a modular \textbf{AI agent suite} powering \textbf{Egnyte Copilot}, delivering \textbf{automation} and \textbf{real-time intelligence} for \textbf{10K+} daily users across \textbf{25K+} global businesses.
+\item Designed an \textbf{AI-powered file recommendation engine} with \textbf{98.56\%} accuracy, optimized for intelligent content discovery, and deployed at \textbf{scale} using \textbf{FastAPI.}
+\item Built a \textbf{high-performance} Python microservice and \textbf{Permission Control API} for Egnyte’s \textbf{5PB+} on-prem file system - boosting efficiency by \textbf{50\%+} and securing access for \textbf{25K+} global businesses.
+\item \footnotesize \textit{Open Source Contributions: \href{https://pypi.org/project/pysmbc/}{\textbf{@pysmbc}:}\href{https://github.com/hamano/pysmbc/pull/62}{\textbf{ \#62}}, \href{https://pypi.org/project/langchain-community/}{\textbf{@langchain-ai}:}\href{https://github.com/langchain-ai/langchain-community/pull/104}{\textbf{ \#104}}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Intel}
+\descript{| Software Engineering Intern }
+\location{Jul 2021 – Apr 2022 | Bengaluru, IN}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Responsible for research and development of \textbf{Intelligent Firmware Trace Analysis Tool (IFTAT)}: A tool that has drastically improved the TAT of SDLC with cost reduction of \textbf{99.88\%}.
+\item Published a Research paper titled \textbf{"Intelligent Firmware Trace Analysis Tool To Expedite Debugging"} @ SHS'22.
+\item Designed a Tool to help developers understand any Regression Test sequence with an accuracy of \textbf{98.47\%}.
+\end{tightemize}
+%\sectionsep
+
+% \runsubsection{Google}
+% \descript{| Software Engineering Intern }
+% \location{May 2013 – Aug 2013 | Mountain View, CA}
+% \begin{tightemize}
+% \item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+% \item Created a backbone.js-like framework for the Captions editor.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH/PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Cervical Cancer Prediction}
+\descript{| Major Project}
+\location{Jan 2020 – May 2020}
+Compared different machine learning techniques across different performance measures. Worked on \textbf{multi-label classification and artificial neural network}. Achieved an \textbf{accuracy of 98.2\%}
+\sectionsep
+
+\runsubsection{Autograder Online Judge}
+\location{| 50K+ production submissions}
+Built an Autograder platform for the programming problem using \textbf{FastAPI}. Used \textbf{Redux} for state management and \textbf{Firebase} for cloud backend. Adopted at University, used by teachers to train \textbf{1K+} students.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HONORS & AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Honors \& Awards} 
+\begin{tabular}{rll}
+2022	     & 1\textsuperscript{st}/500  & Institute Silver Medal,  \footnotesize \textit{\textbf{IIT Jammu}}\\
+2021	     & Top 1\%  & Significant Contributor Award,  \footnotesize \textit{\textbf{Intel}}\\
+2021     & National & IBM CodeKnack Winner \\
+2021     & National & IEEE CS Contest Winner, \footnotesize \textit{\textbf{IIT Bombay}} \\
+2020	     & Top 3\%  & GATE (CSE), \footnotesize \textit{\textbf{IIT Delhi}}\\
+2020	     & 1\textsuperscript{st}/600  & Distinguished Alumni Award, \footnotesize \textit{\textbf{GEC Bhavnagar}}\\
+2020     & 2\textsuperscript{nd}/600 & Ninja Wave Coding Competition, \footnotesize \textit{\textbf{Coding Ninjas \& IEEE SB}} \\
+2018     & National & Competitive Coding Techfest Winner,  \footnotesize \textit{\textbf{GEC \& SSGEC \& SSCCM}}
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

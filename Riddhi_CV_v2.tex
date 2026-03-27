@@ -1,0 +1,183 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{charter} % Charter BT font - matches original PDF exactly
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.015in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Riddhi Khatsuria, PMP\textregistered} \\ \vspace{1pt}
+    \small +91 9773114014 $|$ \href{mailto:riddhikhatsuria@gmail.com}{\underline{riddhikhatsuria@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/riddhikhatsuria}{\underline{LinkedIn}} $|$
+    \href{https://github.com/riddhikhatsuria}{\underline{GitHub}} $|$
+    \href{https://riddhikhatsuria.wixsite.com/riddhi}{\underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gujarat Technological University (GEC Bhavnagar) \textbf{$|$ Institute Rank 1}}{Aug 2016 -- Aug 2020}
+      {Bachelor of Engineering in Information Technology \textbf{$|$ CGPA: 9.22/10.0}}{Gujarat, India}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience (5+ Years)}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer (Solution Developer)}{Oct 2022 -- Present}
+      {Tata Technologies}{Pune, IN}
+      \resumeItemListStart
+        \resumeItem{Engineered \textbf{Python-based microservice} for \textbf{Tata Motors} vehicle service management platform, implementing \textbf{AI/ML-powered cost estimation} engine using \textbf{regression models} and historical service data; integrated \textbf{automated SMS notifications} via \textbf{REST APIs} for real-time service status updates, reducing customer wait time by \textbf{35\%} and serving \textbf{15K+ service requests/month}.}
+        \resumeItem{Architected \textbf{Agentic AI framework} with \textbf{Django} and \textbf{FastAPI}, integrating \textbf{REST APIs}, \textbf{webhooks}, and \textbf{OAuth 2.0} authentication protocols to orchestrate \textbf{15+ AI agents}, processing \textbf{10K+ requests/day} with \textbf{99.7\%} uptime across production environments.}
+        \resumeItem{Deployed containerized \textbf{Python microservices} on \textbf{Kubernetes (GCP)}, leveraging \textbf{Docker}, \textbf{MongoDB}, and \textbf{PostgreSQL} with \textbf{ELK stack} for observability; optimized multi-threaded operations using \textbf{Kibana} debugging, reducing memory footprint by \textbf{40\%} and serving \textbf{50K+ products}.}
+        \resumeItem{Led \textbf{Agile teams} as \textbf{Project Manager} for \textbf{PLM solutions}, managing \textbf{\$2M+ budget}, delivering \textbf{5+ projects} using \textbf{Scrum/Kanban}, achieving \textbf{98\% satisfaction} across \textbf{22K+ businesses}.}
+        \resumeItem{Delivered \textbf{OptimizeIT} and \textbf{EDM2} projects utilizing \textbf{Python}, Java, and JavaScript, implementing \textbf{ML-driven optimization algorithms} that improved operational efficiency by \textbf{20\%} and reduced processing time by \textbf{30\%} for global manufacturing clients.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer (Python Developer)}{May 2022 -- Sep 2022}
+      {Animaker}{Chennai, IN}
+      \resumeItemListStart
+        \resumeItem{Spearheaded Python development at leading \textbf{animation software} for \textbf{20M+} users with Python, Django, AWS, Celery, AWS Lambda, \& ffmpeg.}
+        \resumeItem{Optimized background processing, boosting efficiency with \textbf{Celery} and \textbf{AWS Lambda}, while maintaining reliability through a robust \textbf{Python testing framework}.}
+        \resumeItem{Built \textbf{ML-powered video processing pipeline} using \textbf{Python} and \textbf{TensorFlow}, automating scene detection and content analysis for \textbf{100K+ videos/month}, reducing manual review time by \textbf{65\%} with \textbf{S3} and \textbf{SQS} integration.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer (Python Developer)}{Jan 2022 -- Apr 2022}
+      {PySquad Informatics}{Ahmedabad, IN}
+      \resumeItemListStart
+        \resumeItem{Steered the development of \textbf{scalable} web services and APIs using \textbf{Django} \& \textbf{FastAPI}, boosting system efficiency by \textbf{30\%}.}
+        \resumeItem{Implemented robust \textbf{Python Unit tests}, reducing post deployment issues by \textbf{20\%} and maintaining a \textbf{95\%} test coverage for critical codebases.}
+        \resumeItem{Designed and deployed \textbf{API Gateway} with \textbf{rate limiting} and \textbf{JWT authentication} using \textbf{Python/FastAPI}, handling \textbf{50K+ requests/day} with \textbf{<50ms} latency and \textbf{Redis} caching, improving API response time by \textbf{45\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Jan 2021 -- Dec 2021}
+      {eInfochips (An Arrow Company)}{Ahmedabad, IN}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{AI-powered computer vision} modules using \textbf{Python}, \textbf{OpenCV}, and \textbf{TensorFlow} for real-time object detection and image processing, achieving \textbf{92\%} accuracy in production deployments for IoT devices.}
+        \resumeItem{Built \textbf{REST API} automation framework with \textbf{Python} and \textbf{PyTest}, integrating with \textbf{CI/CD pipelines} to automate testing for \textbf{50+ API endpoints}, reducing regression testing time by \textbf{40\%} and improving code coverage to \textbf{95\%}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Cervical Cancer Prediction} $|$ \emph{Python, TensorFlow, scikit-learn, Keras}}{Jan 2020 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed \textbf{multi-label classification} system using \textbf{ANNs} and ensemble methods on \textbf{858 patient records} with \textbf{36 features}, achieving \textbf{98.2\%} accuracy and \textbf{97.8\%} F1-score through hyperparameter optimization.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.015in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, JavaScript, SQL (MySQL, PostgreSQL, MongoDB)} \\
+     \textbf{Frameworks \& Libraries}{: Django, FastAPI, TensorFlow, OpenCV, PyTest, scikit-learn, Celery, AWS Lambda} \\
+     \textbf{Tools \& Technologies}{: Docker, Kubernetes, GCP, AWS, Git, REST APIs, CI/CD, ELK Stack, Kibana, Redis, Linux/Unix} \\
+     \textbf{Core Competencies}{: AI/ML, Agentic Frameworks, LLMs, Microservices Architecture, Computer Vision, System Design, Agile/Scrum}
+    }}
+ \end{itemize}
+
+%-----------HONORS & AWARDS-----------
+\section{Honors \& Awards}
+ \begin{itemize}[leftmargin=0.015in, label={}]
+    \small{\item{
+     \textbf{2023}{: \textbf{Employee of the Year Award} - Tata Technologies} \\
+     \textbf{2021}{: \textbf{Best Intern Award} - eInfochips} \\
+     \textbf{2020}{: \textbf{Distinguished Alumni Award (1st/600)} - GEC Bhavnagar} \\
+     \textbf{2017}{: \textbf{AAshlesha Techfest Winner} - GEC Bhavnagar} \\
+     \textbf{2014}{: \textbf{Academic Excellence Award (Top 2\%)} - GSEB}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.015in, label={}]
+    \small{\item{
+     {\textbf{Project Management Professional (PMP)\textregistered} - Project Management Institute (PMI)\textregistered}
+    }}
+ \end{itemize}
+
+\end{document}
